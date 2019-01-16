@@ -1,0 +1,163 @@
+/* cssリセット */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ここから書く */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ヘッダー */
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position:fixed;
+  top: 0px;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.logo {
+  width:124px;
+  padding: 20px 0px;
+}
+
+.header-right {
+  float:right;
+}
+
+.header-right a {
+  color: white;
+  padding: 0px 25px;
+  line-height: 65px;
+  display: block;
+  background-color: rgba(255,255,255,0.3);
+
+}
+
+/* トップ */
+.top-wrapper {
+  background-image:url("https://prog-8.com/images/html/advanced/top.png");
+  padding: 180px 0px 100px 0px;
+  background-size: cover;
+  color: white;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.top-wrapper h1,p {
+  opacity: 0.7;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn-wrapper p {
+  margin: 15px 0;
+}
+
+.signup {
+  background-color: #239b76;
+  margin-top: 30px;
+  display:inline-block;
+}
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+.twitter {
+  background-color: #55acee;
+}
+
+/* メイン */
+
+.lesson-wrapper {
+  height: 580px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.heading {
+  padding: 80px 0px 50px 0px;
+  color: #5f5d60;
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%
+}
+
+.lesson-icon {
+  position:relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.text-content {
+  width: 80%;
+  display:inline-block;
+  color: #b3aeb5;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* メッセージ */
+.heading h2,h3 {
+  font-weight: normal;
+}
+
+.message {
+  background-color: #239b76;
+  padding: 15px 40px;
+  box-shadow: 0 7px #1a7940;
+  cursor: pointer;
+  display: inline-block;
+  margin: 50px 0px 80px 0px;
+}
+
+.message:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
